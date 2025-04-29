@@ -1,8 +1,18 @@
+.projects {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+}
+
+.projects h2 {
+  font-size: 2rem;
+}
+
 .project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #f9f9f9;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
   }
   
@@ -11,7 +21,6 @@
     background: white;
     border: 1px solid #ddd;
     padding: 1.5rem;
-    width: 300px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.2s ease;
@@ -46,4 +55,26 @@
     border-radius: 4px;
     margin-left: 0.4rem;
   }
+
+  .skills {
+    margin: 2rem auto;
+    max-width: 800px;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    font-size: 1rem;
+    color: var(--gris-oscuro);
+  }
+  .skills p {
+    margin: 0.5rem 0;
+  }
+  .skills strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #222;
+  }
+  
   

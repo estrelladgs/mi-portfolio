@@ -1,13 +1,16 @@
 import './About.css';
+import foto from '../assets/foto3.jpg';
 
 function About() {
   return (
     <section id="sobre" className="about">
-      <h2>Sobre mí</h2>
-      <p>
-        Estudiante de Ingeniería Informática (3º curso), con interés en desarrollo web y diseño frontend.
-        Me gusta trabajar con React, CSS y herramientas modernas del ecosistema web.
-      </p>
+      <div className='about-text'>
+        <h2>Sobre mí</h2>
+        <p>👩‍💻 React, CSS, diseño UX/UI</p>
+        <p>🎓 Ingeniería Multimedia (3º curso)</p>
+        <p>🤝 Experiencia en liderazgo estudiantil</p>
+      </div>
+      <img src={foto} alt="Estrella Domínguez" className="about-image" />
     </section>
   );
 }

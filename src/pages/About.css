@@ -1,18 +1,37 @@
 .about {
-    padding: 3rem 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .about h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .about p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-  }
-  
+  display: flex;
+  justify-content: center; /* Centra todo el bloque */
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  padding-left: 1rem;
+}
+
+.about-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding-right: 1rem;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}

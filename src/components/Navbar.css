@@ -1,8 +1,8 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: #222;
+    background-color: var(--negro);
     padding: 1rem 2rem;
     color: white;
   }
@@ -26,4 +26,17 @@
   .nav-links a:hover {
     text-decoration: underline;
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      background: var(--negro);
+    }
+  }
+  
   

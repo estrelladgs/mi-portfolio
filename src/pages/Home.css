@@ -14,3 +14,17 @@
     color: #555;
   }
   
+  .btn {
+    padding: 0.7rem 1.5rem;
+    margin: 1rem;
+    background-color: var(--azul);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  .btn:hover {
+    background-color: var(--rosado);
+    color: var(--negro);
+  }
+  

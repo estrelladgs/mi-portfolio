@@ -1,5 +1,7 @@
 import './Contact.css';
 import { useState } from 'react';
+import { FaInstagram, FaTiktok, FaLinkedin } from 'react-icons/fa';
+
 
 function Contact() {
   const [status, setStatus] = useState('');
@@ -24,11 +26,10 @@ function Contact() {
       });
 
       if (res.ok) {
-        setStatus('¡Mensaje enviado con éxito!');
-        form.reset();
+        setStatus({ msg: '¡Mensaje enviado con éxito!', type: 'success' });
       } else {
-        setStatus('Error al enviar el mensaje. Intenta más tarde.');
-      }
+        setStatus({ msg: 'Error al enviar el mensaje.', type: 'error' });
+      }      
     } catch (err) {
       setStatus('Error de conexión. Intenta más tarde.');
     }
@@ -44,6 +45,25 @@ function Contact() {
         <button type="submit">Enviar</button>
       </form>
       {status && <p className="form-status">{status}</p>}
+
+      <div className="contact-info">
+        <p>Además, puedes seguirme en mis redes sociales o escribirme a mi email:</p>
+        <p>
+          <strong>Email: </strong>
+          <a href="mailto:estrelladomsan@gmail.com" target='_blank'>estrelladomsan@gmail.com</a>
+        </p>
+        <div className="social-icons">
+          <a href="https://www.instagram.com/estrelladgs" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <FaInstagram />
+          </a>
+          <a href="https://www.tiktok.com/@estrelladgs" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <FaTiktok />
+          </a>
+          <a href="https://www.linkedin.com/in/estrella-dom%C3%ADnguez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <FaLinkedin />
+          </a>
+        </div>
+      </div>
     </section>
   );
 }
